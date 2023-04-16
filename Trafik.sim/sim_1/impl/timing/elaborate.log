@@ -1,0 +1,24 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto a4889979cde44a7f95ad49808b91564a --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Trafik1_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.Trafik1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "Trafik1_time_impl.sdf", for root module "Trafik1".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "Trafik1_time_impl.sdf", for root module "Trafik1".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.sffsrce_fdre
+Compiling module simprims_ver.FDRE
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.Trafik1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Trafik1_time_impl

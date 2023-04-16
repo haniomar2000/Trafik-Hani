@@ -1,0 +1,7 @@
+Running: xsim.dir/Trafik1_time_synth/xsimk.exe -simmode gui -wdb Trafik1_time_synth.wdb -simrunnum 0 -socket 50484
+Design successfully loaded
+Design Loading Memory Usage: 18332 KB (Peak: 18332 KB)
+Design Loading CPU Usage: 327 ms
+Simulation completed
+Simulation Memory Usage: 18988 KB (Peak: 18988 KB)
+Simulation CPU Usage: 390 ms

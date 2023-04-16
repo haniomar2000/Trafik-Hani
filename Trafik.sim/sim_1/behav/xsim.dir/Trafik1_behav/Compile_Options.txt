@@ -1,0 +1,1 @@
+-wto "a4889979cde44a7f95ad49808b91564a" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Trafik1_behav" "xil_defaultlib.Trafik1" "xil_defaultlib.glbl" -log "elaborate.log" 

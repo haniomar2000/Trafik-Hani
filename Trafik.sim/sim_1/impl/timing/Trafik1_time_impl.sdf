@@ -1,0 +1,246 @@
+(DELAYFILE 
+(SDFVERSION "3.0" )
+(DESIGN "Trafik1")
+(DATE "Sun Apr 16 01:39:28 2023")
+(VENDOR "XILINX")
+(PROGRAM "Vivado")
+(VERSION "2016.1")
+(DIVIDER /)
+(TIMESCALE 1ps)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE blue_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2161.5:2328.8:2328.8) (2161.5:2328.8:2328.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE blue_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE blue_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (229.0:285.0:285.0) (229.0:285.0:285.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-55.0:-45.0:-45.0) (159.0:198.0:198.0))
+      (SETUPHOLD (negedge D) (posedge C) (-55.0:-45.0:-45.0) (159.0:198.0:198.0))
+      (SETUPHOLD (posedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (SETUPHOLD (negedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (PERIOD (posedge C) (870.0:1000.0:1000.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+    )
+)
+(CELL 
+  (CELLTYPE "BUFG")
+  (INSTANCE clk_IBUF_BUFG_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (77.0:81.0:81.0) (77.0:81.0:81.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "IBUF")
+  (INSTANCE clk_IBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (762.0:892.8:892.8) (762.0:892.8:892.8))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE green_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2205.1:2372.7:2372.7) (2205.1:2372.7:2372.7))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE green_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE green_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (229.0:285.0:285.0) (229.0:285.0:285.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-55.0:-45.0:-45.0) (159.0:198.0:198.0))
+      (SETUPHOLD (negedge D) (posedge C) (-55.0:-45.0:-45.0) (159.0:198.0:198.0))
+      (SETUPHOLD (posedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (SETUPHOLD (negedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (PERIOD (posedge C) (870.0:1000.0:1000.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+    )
+)
+(CELL 
+  (CELLTYPE "OBUF")
+  (INSTANCE red_OBUF_inst)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I O (2216.6:2384.4:2384.4) (2216.6:2384.4:2384.4))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE red_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "LUT1")
+  (INSTANCE red_i_2)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I0 O (100.0:125.0:125.0) (100.0:125.0:125.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE red_reg)
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (204.0:254.0:254.0) (204.0:254.0:254.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-56.0:-46.0:-46.0) (149.0:185.0:185.0))
+      (SETUPHOLD (negedge D) (posedge C) (-56.0:-46.0:-46.0) (149.0:185.0:185.0))
+      (SETUPHOLD (posedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (SETUPHOLD (negedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (PERIOD (posedge C) (870.0:1000.0:1000.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+    )
+)
+(CELL 
+  (CELLTYPE "LUT2")
+  (INSTANCE state\[1\]_i_1)
+  (DELAY 
+    (PATHPULSE (50.0))
+    (ABSOLUTE 
+      (IOPATH I1 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+      (IOPATH I0 O (84.0:105.0:105.0) (84.0:105.0:105.0))
+    )
+  )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE state_reg\[0\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (204.0:254.0:254.0) (204.0:254.0:254.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-56.0:-46.0:-46.0) (149.0:185.0:185.0))
+      (SETUPHOLD (negedge D) (posedge C) (-56.0:-46.0:-46.0) (149.0:185.0:185.0))
+      (SETUPHOLD (posedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (SETUPHOLD (negedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (PERIOD (posedge C) (870.0:1000.0:1000.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+    )
+)
+(CELL 
+  (CELLTYPE "FDRE")
+  (INSTANCE state_reg\[1\])
+  (DELAY 
+    (ABSOLUTE 
+      (IOPATH C Q (229.0:285.0:285.0) (229.0:285.0:285.0))
+    )
+  )
+    (TIMINGCHECK
+      (SETUPHOLD (posedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (negedge CE) (posedge C) (71.0:88.0:88.0) (-12.0:-10.0:-10.0))
+      (SETUPHOLD (posedge D) (posedge C) (-55.0:-45.0:-45.0) (159.0:198.0:198.0))
+      (SETUPHOLD (negedge D) (posedge C) (-55.0:-45.0:-45.0) (159.0:198.0:198.0))
+      (SETUPHOLD (posedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (SETUPHOLD (negedge R) (posedge C) (281.0:350.0:350.0) (-66.0:-54.0:-54.0))
+      (PERIOD (posedge C) (870.0:1000.0:1000.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+      (WIDTH (posedge C) (435.0:500.0:500.0))
+    )
+)
+(CELL 
+    (CELLTYPE "Trafik1")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+      (INTERCONNECT blue_i_1/O blue_reg/D (72.0:90.0:90.0) (72.0:90.0:90.0))
+      (INTERCONNECT blue_reg/Q blue_OBUF_inst/I (1242.3:1371.3:1371.3) (1242.3:1371.3:1371.3))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O blue_reg/C (1535.8:1662.8:1662.8) (1535.8:1662.8:1662.8))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O green_reg/C (1535.8:1662.8:1662.8) (1535.8:1662.8:1662.8))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O red_reg/C (1535.8:1662.8:1662.8) (1535.8:1662.8:1662.8))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O state_reg\[0\]/C (1535.8:1662.8:1662.8) (1535.8:1662.8:1662.8))
+      (INTERCONNECT clk_IBUF_BUFG_inst/O state_reg\[1\]/C (1535.8:1662.8:1662.8) (1535.8:1662.8:1662.8))
+      (INTERCONNECT clk_IBUF_inst/O clk_IBUF_BUFG_inst/I (1734.1:1826.8:1826.8) (1734.1:1826.8:1826.8))
+      (INTERCONNECT green_i_1/O green_reg/D (70.0:88.0:88.0) (70.0:88.0:88.0))
+      (INTERCONNECT green_reg/Q green_OBUF_inst/I (1268.4:1403.4:1403.4) (1268.4:1403.4:1403.4))
+      (INTERCONNECT red_i_1/O blue_reg/CE (243.6:298.6:298.6) (243.6:298.6:298.6))
+      (INTERCONNECT red_i_1/O green_reg/CE (243.6:298.6:298.6) (243.6:298.6:298.6))
+      (INTERCONNECT red_i_1/O red_reg/CE (243.6:298.6:298.6) (243.6:298.6:298.6))
+      (INTERCONNECT red_i_2/O red_reg/D (42.0:52.0:52.0) (42.0:52.0:52.0))
+      (INTERCONNECT red_reg/Q red_OBUF_inst/I (1365.4:1518.4:1518.4) (1365.4:1518.4:1518.4))
+      (INTERCONNECT state\[1\]_i_1/O state_reg\[1\]/D (72.0:90.0:90.0) (72.0:90.0:90.0))
+      (INTERCONNECT state_reg\[0\]/Q blue_i_1/I0 (565.1:684.1:684.1) (565.1:684.1:684.1))
+      (INTERCONNECT state_reg\[0\]/Q green_i_1/I1 (681.2:828.2:828.2) (681.2:828.2:828.2))
+      (INTERCONNECT state_reg\[0\]/Q red_i_1/I1 (518.2:626.2:626.2) (518.2:626.2:626.2))
+      (INTERCONNECT state_reg\[0\]/Q state\[1\]_i_1/I1 (243.0:289.0:289.0) (243.0:289.0:289.0))
+      (INTERCONNECT state_reg\[1\]/Q state_reg\[0\]/D (273.8:327.8:327.8) (273.8:327.8:327.8))
+      (INTERCONNECT state_reg\[1\]/Q green_i_1/I0 (451.7:543.7:543.7) (451.7:543.7:543.7))
+      (INTERCONNECT state_reg\[1\]/Q red_i_1/I0 (575.6:697.6:697.6) (575.6:697.6:697.6))
+      (INTERCONNECT state_reg\[1\]/Q red_i_2/I0 (451.7:543.7:543.7) (451.7:543.7:543.7))
+      (INTERCONNECT state_reg\[1\]/Q state\[1\]_i_1/I0 (354.0:428.0:428.0) (354.0:428.0:428.0))
+      )
+    )
+)
+)
